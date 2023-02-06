@@ -11,7 +11,11 @@ class ExtendedClient extends Client {
   public aliases: Collection<string, Command> = new Collection();
   public constructor() {
 		super({
-			intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+			intents: [
+        Intents.FLAGS.GUILDS, 
+        Intents.FLAGS.GUILD_MESSAGES
+        //puxar as permissao bot
+      ],
 		});
 	}
   public async init() {
